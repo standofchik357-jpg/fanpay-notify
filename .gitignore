@@ -2,7 +2,7 @@
 __pycache__/
 *.pyc
 edge_profiles/
-data/
+!data/admin.txt
 playerok_session/
 cloudflared.exe*
 chat_debug.html
