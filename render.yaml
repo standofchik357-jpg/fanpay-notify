@@ -1,5 +1,1 @@
-services:
-  - type: web
-    name: fanpay-notify
-    runtime: python
-    pythonVersion: "3.12"
+3.12.8
