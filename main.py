@@ -1,6 +1,5 @@
 import asyncio
 import os
-import threading
 
 from aiohttp import web
 
@@ -11,27 +10,26 @@ async def health(request):
     return web.Response(text="Bot is running")
 
 
-def start_web():
+async def start_web():
     app = web.Application()
     app.router.add_get("/", health)
 
-    web.run_app(
-        app,
+    runner = web.AppRunner(app)
+    await runner.setup()
+
+    site = web.TCPSite(
+        runner,
         host="0.0.0.0",
         port=int(os.getenv("PORT", 10000))
     )
 
+    await site.start()
+
 
 async def main():
-
-    threading.Thread(
-        target=start_web,
-        daemon=True
-    ).start()
-
+    await start_web()
     await start_bot()
 
 
 if __name__ == "__main__":
-
     asyncio.run(main())
