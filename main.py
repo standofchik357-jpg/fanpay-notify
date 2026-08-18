@@ -1,6 +1,5 @@
 import asyncio
 import os
-
 from aiohttp import web
 
 from app.bot import start_bot
@@ -19,8 +18,8 @@ async def start_web():
 
     site = web.TCPSite(
         runner,
-        host="0.0.0.0",
-        port=int(os.getenv("PORT", 10000))
+        "0.0.0.0",
+        int(os.getenv("PORT", 10000))
     )
 
     await site.start()
