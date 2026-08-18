@@ -1,0 +1,213 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #0b0f14;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+.app {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    padding: 18px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.subtitle {
+    color: #8993a1;
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #55d68a;
+    font-size: 12px;
+}
+
+.status span {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #55d68a;
+}
+
+.profile-card,
+.balance-card,
+.status-card {
+    background: #131922;
+    border: 1px solid #202936;
+    border-radius: 18px;
+}
+
+.profile-card {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px;
+}
+
+.avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 15px;
+    background: #202936;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.hello {
+    color: #8993a1;
+    font-size: 13px;
+}
+
+.username {
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 3px;
+}
+
+.balance-card {
+    margin-top: 14px;
+    padding: 20px;
+}
+
+.balance-label {
+    color: #8993a1;
+    font-size: 13px;
+}
+
+.balance {
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+.plan {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 9px;
+    border-radius: 8px;
+    background: #202936;
+    color: #aeb7c4;
+    font-size: 12px;
+}
+
+.section {
+    margin-top: 25px;
+}
+
+.section-title {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.card {
+    text-align: left;
+    border: 1px solid #202936;
+    border-radius: 16px;
+    background: #131922;
+    color: white;
+    padding: 16px;
+    min-height: 125px;
+    cursor: pointer;
+}
+
+.card:active {
+    transform: scale(0.98);
+}
+
+.icon {
+    font-size: 25px;
+    margin-bottom: 14px;
+}
+
+.card-title {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.card-text {
+    color: #8993a1;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.status-card {
+    padding: 15px;
+    margin-bottom: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.service {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.service-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    background: #202936;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-name {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.service-status {
+    color: #8993a1;
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+.service-dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #55d68a;
+}
+
+.service-dot.offline {
+    background: #68717e;
+}
+
+footer {
+    text-align: center;
+    color: #596372;
+    font-size: 11px;
+    padding: 30px 0 10px;
+}

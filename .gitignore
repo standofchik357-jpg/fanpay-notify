@@ -1,0 +1,9 @@
+.env
+__pycache__/
+*.pyc
+edge_profiles/
+data/
+playerok_session/
+cloudflared.exe*
+chat_debug.html
+sent_orders.json

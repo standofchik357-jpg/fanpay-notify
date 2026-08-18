@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    >
+
+    <title>Market Notify</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <header class="header">
+            <div>
+                <div class="title">Market Notify</div>
+                <div class="subtitle">Панель управления</div>
+            </div>
+
+            <div class="status">
+                <span></span>
+                Online
+            </div>
+        </header>
+
+
+        <main>
+
+            <section class="profile-card">
+
+                <div class="avatar">
+                    👤
+                </div>
+
+                <div class="profile-info">
+                    <div class="hello">Добро пожаловать</div>
+                    <div class="username" id="username">
+                        Загрузка...
+                    </div>
+                </div>
+
+            </section>
+
+
+            <section class="balance-card">
+
+                <div class="balance-label">
+                    Баланс
+                </div>
+
+                <div class="balance">
+                    <span id="balance">0</span> ₽
+                </div>
+
+                <div class="plan">
+                    🆓 FREE
+                </div>
+
+            </section>
+
+
+            <section class="section">
+
+                <div class="section-title">
+                    Управление
+                </div>
+
+                <div class="grid">
+
+                    <button class="card">
+                        <div class="icon">📊</div>
+                        <div class="card-title">Статистика</div>
+                        <div class="card-text">
+                            Продажи и заказы
+                        </div>
+                    </button>
+
+                    <button class="card">
+                        <div class="icon">🛒</div>
+                        <div class="card-title">Магазин</div>
+                        <div class="card-text">
+                            Доступные товары
+                        </div>
+                    </button>
+
+                    <button class="card">
+                        <div class="icon">📱</div>
+                        <div class="card-title">Аккаунты</div>
+                        <div class="card-text">
+                            FunPay и PlayerOK
+                        </div>
+                    </button>
+
+                    <button class="card">
+                        <div class="icon">🎁</div>
+                        <div class="card-title">Бонусы</div>
+                        <div class="card-text">
+                            Промокоды и колесо
+                        </div>
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <section class="section">
+
+                <div class="section-title">
+                    Состояние
+                </div>
+
+                <div class="status-card">
+
+                    <div class="service">
+                        <div class="service-icon">🛒</div>
+
+                        <div>
+                            <div class="service-name">
+                                FunPay
+                            </div>
+
+                            <div class="service-status">
+                                Не подключён
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="service-dot"></div>
+
+                </div>
+
+
+                <div class="status-card">
+
+                    <div class="service">
+                        <div class="service-icon">🎮</div>
+
+                        <div>
+                            <div class="service-name">
+                                PlayerOK
+                            </div>
+
+                            <div class="service-status">
+                                Не подключён
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="service-dot offline"></div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+        <footer>
+            Market Notify · v1.0
+        </footer>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
