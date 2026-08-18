@@ -1,9 +1,10 @@
-.env
-__pycache__/
-*.pyc
-edge_profiles/
+.env 
+__pycache__/ 
+*.pyc 
+edge_profiles/ 
+data/*
 !data/admin.txt
-playerok_session/
-cloudflared.exe*
-chat_debug.html
+playerok_session/ 
+cloudflared.exe* 
+chat_debug.html 
 sent_orders.json
